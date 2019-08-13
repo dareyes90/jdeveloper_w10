@@ -14,11 +14,8 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "Microsoft/EdgeOnWindows10"
   config.vm.box_version = "1.0"
-<<<<<<< HEAD
   # RDP connection
   #config.vm.network "forwarded_port", guest: 3389, host: 3389
-=======
->>>>>>> da2206c93337fc4257df0d646439109da608d3b3
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -48,11 +45,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-<<<<<<< HEAD
-  #config.vm.synced_folder "D:/Users/deivy/compartida", "C:/Users/IEUSer/compartida", type: "smb"
-=======
-  # config.vm.synced_folder "../data", "/vagrant_data"
->>>>>>> da2206c93337fc4257df0d646439109da608d3b3
+  config.vm.synced_folder "D:/compartida", "C:/Users/IEUSer/compartida", type: "smb"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -63,12 +56,8 @@ Vagrant.configure("2") do |config|
      vb.gui = true
 
      # Customize the amount of memory on the VM:
-<<<<<<< HEAD
      vb.memory = "4096"
      vb.cpus = "2"
-=======
-     vb.memory = "1024"
->>>>>>> da2206c93337fc4257df0d646439109da608d3b3
    end
   #
   # View the documentation for the provider you are using for more
